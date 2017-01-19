@@ -1,9 +1,11 @@
 
+const seconds_hand = document.querySelector(".sec-arr");
+const minutes_hand = document.querySelector(".min-arr");
+const hours_hand = document.querySelector(".hour-arr");
+
 function setDate(){
 	date = new Date();
-	seconds_hand = document.querySelector(".sec-arr");
-	minutes_hand = document.querySelector(".min-arr");
-	hours_hand = document.querySelector(".hour-arr");
+
 
 	seconds_deg = date.getSeconds()*360/60 + 90;
 	min_deg = date.getMinutes()*360/60 + 90;
